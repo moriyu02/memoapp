@@ -8,7 +8,7 @@
                     <h4><%= memo.title %> </h4>
                     <p><%= memo.category.name %></p>
                     <div class="buttons">
-                        <a href ="/memos/<%=memo.id%>" data-method="delete"><div class="glyphicon glyphicon-trash"></div></a>
+                        <a href ="/memos/<%=memo.id%>" data-method="delete", data-confirm="削除しますか？" title="削除の確認"><div class="glyphicon glyphicon-trash"></div></a>
                         <a href ="/memos/<%=memo.id%>/edit"><div class="glyphicon glyphicon-edit"></div></a>
                     </div>
                 </div>
